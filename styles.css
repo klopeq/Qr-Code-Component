@@ -53,14 +53,14 @@ body {
 
 @media (max-width: 500px) {
     body {
-        margin-top: 2rem;
+        display: grid;
+        place-content: center;
         height: auto;
-        margin: auto;
     }
 
     .container {
         width: 350px;
-        margin-top: 2rem;
+        margin-top: 2rem; 
     }
 }
 
