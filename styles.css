@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --slate-300: #d6e2f0;
+    --slate-500: #68778d;
+    --slate-900: rgb(31, 50, 81);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: hidden; 
+    background-color: var(--slate-300); 
+    font-family: "Outfit", sans-serif;
+}
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    height: 525px;
+    border-radius: 18px;
+}
+
+.container .image img {
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.container .content h2 {
+    font-weight: 700;
+    color: var(--slate-900);
+    text-align: center;
+}
+
+.container .content p {
+    color: var(--slate-500);
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    body {
+        margin-top: 2rem;
+        height: auto;
+        margin: auto;
+    }
+
+    .container {
+        width: 350px;
+        margin-top: 2rem;
+    }
+}
+
